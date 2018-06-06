@@ -1,5 +1,6 @@
 $(document).ready(function(){
     $('select').formSelect();
+    console.log("what");
   });
   
   $("#submit").on("click", function(event) {
@@ -12,17 +13,15 @@ $(document).ready(function(){
       var userInput = {
          name: $("#name").val().trim(),
          url: $("#imageURL").val().trim(),
-         object: {
-            name: name,
-            url: url,
-            answers: answers
-        }
+         answer: answers
       }
+console.log(userInput);
 
       $.post("/api/friends", userInput)
         .done(function(data) {
-          
-            $('#userMatch').html(data.matchName);
+          console.log(data);
+          console.log(data.name);
+            $('#userMatch').html(data.name);
             $('#modal1').modal('open');
         });
   });
