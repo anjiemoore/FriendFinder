@@ -22,7 +22,7 @@ module.exports = function(app) {
                 console.log(userTotal);
                 console.log(friendTotal);
                 console.log(difference);
-            if(userTotal - friendTotal < difference) {
+            if(userTotal - friendTotal <= difference) {
         
                 difference = userTotal - friendTotal;
                 bestFriend = friendsData[i];

@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    $('.modal').modal();
     $('select').formSelect();
     console.log("what");
   });

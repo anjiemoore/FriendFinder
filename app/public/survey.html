@@ -188,10 +188,20 @@
 
 <div class="container">
     <div class="row">
-        <button class="btn waves-effect waves-light" type="submit" id="submit" name="action">Submit</button>
+        <button data-target="modal1" class="btn waves-effect waves-light modal-trigger" type="submit" id="submit" name="action">Submit</button>
     </div>
 </div>
-            
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4 id="userMatch"></h4>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+          
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 <script src="/survey/js"></script>
